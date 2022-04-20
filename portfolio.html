@@ -17,9 +17,9 @@
             <a href="./index.html" lang="en" class="header-logo"><span class="logo-designe">Web</span>Studio</a>
         <nav>
             <ul class="header-navigation">
-                <li><a href="./index.html" class="header-nav-link link">Студия</a></li>
-                <li><a href="./portfolio.html" class="header-nav-link link current">Портфолио</a></li>
-                <li><a href="#" class="header-nav-link link">Контакты</a></li>
+                <li class="header-navigation-item"><a href="./index.html" class="header-nav-link link">Студия</a></li>
+                <li class="header-navigation-item"><a href="./portfolio.html" class="header-nav-link link current">Портфолио</a></li>
+                <li class="header-navigation-item"><a href="#" class="header-nav-link link">Контакты</a></li>
             </ul>
         </nav>
         <ul class="header-contacts">
@@ -58,7 +58,14 @@
                 <ul class="portfolio-projects">
                     <li class="portfolio-item">
                         <a href="" class="portfolio-projects-link link">
-                            <img src="./images/portfolio/tehno.jpg" alt="фото с вебсайтом" width="370" class="img">
+                            <div class="portfolio-thumb">
+                                <img src="./images/portfolio/tehno.jpg" alt="фото с вебсайтом" width="370" class="img">
+                                <div class="portfolio-projects-information">
+                                   <p class="portfolio-projects-text">
+                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                                   </p> 
+                                </div>
+                            </div>
                             <div class="portfolio-specification">
                                 <h3 class="project-header">Технокряк</h3>
                                 <p class="portfolio-description">Веб-сайт</p>
@@ -67,7 +74,9 @@
                     </li>
                     <li class="portfolio-item">
                         <a href="" class="portfolio-projects-link link">
-                            <img src="./images/portfolio/poster.jpg" alt="фото дизайна постера" width="370" class="img">
+                            <div class="portfolio-thumb">
+                                <img src="./images/portfolio/poster.jpg" alt="фото дизайна постера" width="370" class="img">
+                            </div>
                             <div class="portfolio-specification">
                                 <h3 class="project-header">Постер New Orlean vs Golden Star</h3>
                                 <p class="portfolio-description">Дизайн</p>
@@ -76,7 +85,9 @@
                     </li>
                     <li class="portfolio-item">
                         <a href="" class="portfolio-projects-link link">
-                            <img src="./images/portfolio/seafood.jpg" alt="фото дизайна ресторана" width="370" class="img">
+                            <div class="portfolio-thumb">
+                                <img src="./images/portfolio/seafood.jpg" alt="фото дизайна ресторана" width="370" class="img">
+                            </div>
                             <div class="portfolio-specification">
                                 <h3 class="project-header">Ресторан Seafood</h3>
                                 <p class="portfolio-description">Приложение</p>
@@ -85,7 +96,9 @@
                     </li>
                     <li class="portfolio-item">
                         <a href="" class="portfolio-projects-link link">
-                            <img src="./images/portfolio/speakers.jpg" alt="фото с наушниками" width="370" class="img">
+                            <div class="portfolio-thumb">
+                                <img src="./images/portfolio/speakers.jpg" alt="фото с наушниками" width="370" class="img">
+                            </div>
                             <div class="portfolio-specification">
                                 <h3 class="project-header">Проект Prime</h3>
                                 <p class="portfolio-description">Маркетинг</p>
@@ -94,7 +107,9 @@
                     </li>
                     <li class="portfolio-item">
                         <a href="" class="portfolio-projects-link link">
-                            <img src="./images/portfolio/boxes.jpg" alt="фото проекта с коробками" width="370" class="img">
+                            <div class="portfolio-thumb">
+                                <img src="./images/portfolio/boxes.jpg" alt="фото проекта с коробками" width="370" class="img">
+                            </div>
                             <div class="portfolio-specification">
                                 <h3 class="project-header">Проект Boxes</h3>
                                 <p class="portfolio-description">Приложение</p>
@@ -103,7 +118,9 @@
                     </li>
                     <li class="portfolio-item">
                         <a href="" class="portfolio-projects-link link">
-                            <img src="./images/portfolio/inspiration.jpg" alt="фото страницы вебсайта" width="370" class="img">
+                            <div class="portfolio-thumb">
+                                <img src="./images/portfolio/inspiration.jpg" alt="фото страницы вебсайта" width="370" class="img">
+                            </div>
                             <div class="portfolio-specification">
                                 <h3 class="project-header">Inspiration has no Borders</h3>
                                 <p class="portfolio-description">Веб-сайт</p>
@@ -112,7 +129,9 @@
                     </li>
                     <li class="portfolio-item">
                         <a href="" class="portfolio-projects-link link">
-                            <img src="./images/portfolio/edition.jpg" alt="фото с журналом" width="370" class="img">
+                            <div class="portfolio-thumb">
+                                <img src="./images/portfolio/edition.jpg" alt="фото с журналом" width="370" class="img">
+                            </div>
                             <div class="portfolio-specification">
                                 <h3 class="project-header">Издание Limited Edition</h3>
                                 <p class="portfolio-description">Дизайн</p>
@@ -121,7 +140,9 @@
                     </li>
                     <li class="portfolio-item">
                         <a href="" class="portfolio-projects-link link">
-                            <img src="./images/portfolio/lab.jpg" alt="фото дизайна брелка" width="370" class="img">
+                            <div class="portfolio-thumb">
+                                <img src="./images/portfolio/lab.jpg" alt="фото дизайна брелка" width="370" class="img">
+                            </div>
                             <div class="portfolio-specification">
                                 <h3 class="project-header">Проект LAB</h3>
                                 <p class="portfolio-description">Маркетинг</p>
@@ -130,7 +151,9 @@
                     </li>
                     <li class="portfolio-item">
                         <a href="" class="portfolio-projects-link link">
-                            <img src="./images/portfolio/business.jpg" alt="фото со страницей приложения" width="370" class="img">
+                            <div class="portfolio-thumb">
+                                <img src="./images/portfolio/business.jpg" alt="фото со страницей приложения" width="370" class="img">
+                            </div>
                             <div class="portfolio-specification">
                                 <h3 class="project-header">Growing Business</h3>
                                 <p class="portfolio-description">Приложение</p>
