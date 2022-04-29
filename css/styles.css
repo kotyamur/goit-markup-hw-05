@@ -684,10 +684,10 @@ address {
     right: 8px;
     width: 30px;
     height: 30px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 0; */
     background: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
