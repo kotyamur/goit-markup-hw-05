@@ -661,6 +661,7 @@ address {
     position: absolute;
     top: 50%;
     left: 50%;
+    padding: 40px;
 
     min-height: 581px;
     min-width: 528px;
@@ -675,8 +676,6 @@ address {
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 .close-icon {
     position: absolute;
@@ -695,3 +694,67 @@ address {
     cursor: pointer;
 }
 
+.modal-title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--theme-heading);
+}
+
+.modal-form {
+    margin-bottom: 20px;
+}
+
+.modal-field:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.modal-form-label {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var();
+}
+
+.modal-form-input {
+    display: block;
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+}
+
+.modal-form-textarea {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    min-height: 120px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.modal-form-textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-checkbox-label {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+}
+
+.modal-btn {
+    display: block;
+    margin: auto;
+}

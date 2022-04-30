@@ -383,6 +383,31 @@
                     <use href="./images/icons.svg#icon-close-modal"></use>
                 </svg>
             </button>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="modal-form" autocomplete="off">
+                <div class="modal-field">
+                    <label class="modal-form-label">Имя</label>
+                    <input name="name" class="modal-form-input" type="text">
+                </div>
+                <div class="modal-field">
+                    <label class="modal-form-label">Телефон</label>
+                    <input name="tel" class="modal-form-input" type="tel">
+                </div>
+                <div class="modal-field">
+                    <label class="modal-form-label">Почта</label>
+                    <input name="mail" class="modal-form-input" type="email">
+                </div>
+                <div class="modal-field">
+                    <label class="modal-form-label">Комментарий</label>
+                    <textarea name="coments" class="modal-form-textarea" placeholder="Введите текст"></textarea>
+                </div>
+            </form>
+            <label class="modal-checkbox-label">
+                <input name="policy" class="modal-checkbox" type="checkbox">
+                Соглашаюсь с рассылкой и принимаю
+                <a href="#">Условия договора</a> 
+            </label>
+            <button type="submit" class="call-btn modal-btn">Отправить</button>
         </div>
     </div>
 
