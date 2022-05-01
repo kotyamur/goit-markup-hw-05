@@ -193,9 +193,14 @@ address {
 }
 
 .call-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
     border: 0;
     border-radius: 4px;
-    padding: 10px 32px;
+    /* padding: 10px 32px; */
 
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
@@ -466,11 +471,17 @@ address {
     gap: 70px;
 }
 
-.footer-socials {
+.footer-socials,
+.footer-subscribe {
     padding-top: 12px;
 }
 
-.footer-call {
+.footer-subscribe {
+    margin-left: auto;
+}
+
+.footer-socials-call,
+.footer-subscribe-call {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -509,6 +520,26 @@ address {
 .footer-socials-link:hover,
 .footer-socials-link:focus {
     background-color: var(--theme-hover);
+}
+
+.footer-input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--theme-contacts);
+    background-color: transparent;
+}
+
+.footer-btn {
+    margin-left: 12px;
+}
+
+.footer-send-icons {
+    margin-left: 10px;
 }
 
 
@@ -685,13 +716,18 @@ address {
     height: 30px;
     /* display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 0; */
+    align-items: center; */
     background: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     outline: none;
     cursor: pointer;
+    fill: #000000;
+}
+
+.close-icon:hover,
+.close-icon:focus {
+    fill: #2196F3;
 }
 
 .modal-title {
@@ -705,6 +741,10 @@ address {
 
 .modal-form {
     margin-bottom: 20px;
+}
+
+.modal-field {
+    position: relative;
 }
 
 .modal-field:not(:last-child) {
@@ -723,10 +763,25 @@ address {
 .modal-form-input {
     display: block;
     width: 100%;
-    padding: 11px 12px;
+    padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     height: 40px;
+}
+
+.modal-field:focus-within .modal-form-input {
+    border-color: var(--theme-hover);
+}
+
+.modal-form-icon {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+    fill: #212121;
+}
+
+.modal-field:focus-within .modal-form-icon {
+    fill: var(--theme-hover);
 }
 
 .modal-form-textarea {
@@ -746,6 +801,10 @@ address {
     color: rgba(117, 117, 117, 0.5);
 }
 
+.modal-field:focus-within .modal-form-textarea {
+    border-radius: var(--theme-hover);
+}
+
 .modal-checkbox-label {
     display: block;
     margin-bottom: 30px;
@@ -757,4 +816,5 @@ address {
 .modal-btn {
     display: block;
     margin: auto;
+    width: 200px;
 }
